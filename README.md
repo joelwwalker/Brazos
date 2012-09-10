@@ -17,14 +17,14 @@ The prototype monitoring installation at Texas A&M is viewable here:
 	http://collider.physics.tamu.edu/tier3/mon/
 
 There are several prerequisites that should be in place for proper installation and functioning:
-	* A clean account on the host cluster - we suggest "brazos" as the username
-	* Linux shell: /bin/sh & /bin/bash
-	* Apache web server with SSI enabled for .html or .shtml (or available via .htaccess)
-	* Perl and cgi-bin web directory
-	* Standard build tools, e.g. make, cpan, gcc
-	* Access to web via lwp-download, curl or wget, etc.
-	* Group member access to common CMS data disk partition
-	* Job scheduling via crontab
+* A clean account on the host cluster - we suggest "brazos" as the username
+* Linux shell: /bin/sh & /bin/bash
+* Apache web server with SSI enabled for .html or .shtml (or available via .htaccess)
+* Perl and cgi-bin web directory
+* Standard build tools, e.g. make, cpan, gcc
+* Access to web via lwp-download, curl or wget, etc.
+* Group member access to common CMS data disk partition
+* Job scheduling via crontab
 
 The tar-zipped distribution that you have now unpacked should have created a single directory "brazos"
 holding all the files essential to installing the Brazos monitor, including this README file.
@@ -37,10 +37,10 @@ not currently at the base of the monitoring user's home directory (use "ls ~/bra
 it must be moved there "mv brazos ~/" before proceeding.
 
 To Install:
-	* Navigate "cd ~/brazos" into the monitoring distribution directory.
-	* Run the configuration script "./configure.pl" and answer the required questions
-	* Run make to locally install libraries and system files "make"
-	* Re-enter the shell to source the new environment "exec bash"
+* Navigate "cd ~/brazos" into the monitoring distribution directory.
+* Run the configuration script "./configure.pl" and answer the required questions
+* Run make to locally install libraries and system files "make"
+* Re-enter the shell to source the new environment "exec bash"
 
 The above steps should be all that is required to establish a minimal monitoring installation.
 However, it is likely that unanticipated system configurations will sometimes break this
@@ -81,7 +81,8 @@ CRAB submission scripts.
 Once your data downloads have been tested and your preferred configuration of active modules
 is established, it is time to register the monitor with the crontab job scheduler.
 The following line should be added verbatim to the monitor user's crontab:
-* * * * * . ${HOME}/.bashrc && ${BRAZOS_BASE_PATH}${BRAZOS_CGI_PATH}/_Perl/brazos.pl > /dev/null 2> &1
+
+	* * * * * . ${HOME}/.bashrc && ${BRAZOS_BASE_PATH}${BRAZOS_CGI_PATH}/_Perl/brazos.pl > /dev/null 2> &1
 
 Note that although the monitor is triggered by this command once each minute, most cycles will
 pass without any action being taken.  The most rapidly refreshed statistics are handled on a five
@@ -99,7 +100,7 @@ Improving the intelligence of the email distribution manager is a planned object
 
 Your feedback and comments are very much appreciated!
 
-Enjoy -- Joel Walker
-Asst. Professor of Physics
-Sam Houston State University
+Enjoy -- Joel Walker  
+Asst. Professor of Physics  
+Sam Houston State University  
 jwalker AT shsu.edu
