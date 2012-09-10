@@ -8,7 +8,7 @@ Thanks for your interest in installing "Brazos", the CMS Tier 3 Site Monitor!
 If you have any questions, requests or suggestions please email Joel Walker: jwalker AT shsu.edu
 
 If you have any comments that may be helpful or interesting to the larger community, please email
-the Tier 3 list: hn-cms-osg-tier3@cern.ch or the Monitoring list: hn-cms-comp-monitoring@cern.ch
+the Tier 3 list: hn-cms-osg-tier3 AT cern.ch or the Monitoring list: hn-cms-comp-monitoring AT cern.ch
 
 A presentation on the monitoring software is viewable here:
   http://www.joelwalker.net/talks/LHC_Monitoring.pdf
@@ -47,7 +47,7 @@ However, it is likely that unanticipated system configurations will sometimes br
 processing chain.  In particular, the make procedure is quite complex.  As it is running
 (this can take some time) updates on the status will be posted to your terminal.  If the
 process terminates abnormally, please send the reported error and its surrounding context
-by email to Joel Walker (jwalker@shsu.edu).  Even (and especially) if you are ultimately able
+by email to Joel Walker (jwalker AT shsu.edu).  Even (and especially) if you are ultimately able
 to resolve the error, this will greatly assist improvement of the distribution package.
 
 Please use a web browser to navigate to the document root to test if the monitor is viewable.
@@ -74,9 +74,8 @@ more likely to be susceptible to system variations.  In particular, the CATS_DAT
 will not function "out of the box" as it is employed at Texas A&M.  This module currently
 requires the separate submission of batches of best-practice compliant jobs from a member of
 your physics group, whereas the monitor collects and reports the outcome of those processes.
-Thus, you may initially wish to set this module to "<ACTIVE=FALSE>".  Please contact
-Joel Walker (jwalker@shsu.edu) if you interested in a copy of our automated "CATS" test jobs
-CRAB submission scripts.
+Thus, you may initially wish to set this module to "<ACTIVE=FALSE>".  Please ask
+if you interested in a copy of our automated "CATS" test jobs CRAB submission scripts.
 
 Once your data downloads have been tested and your preferred configuration of active modules
 is established, it is time to register the monitor with the crontab job scheduler.
