@@ -1,7 +1,7 @@
 Brazos
 ======
 
-The Brazos CMS Data Analysis Site Monitoring Utility
+* The Brazos CMS Data Analysis Site Monitoring Utility
 
 Thanks for your interest in installing "Brazos", the CMS Tier 3 Site Monitor!
 
@@ -9,6 +9,11 @@ If you have any questions, requests or suggestions please email Joel Walker: jwa
 
 If you have any comments that may be helpful or interesting to the larger community, please email
 the Tier 3 list: hn-cms-osg-tier3 AT cern.ch or the Monitoring list: hn-cms-comp-monitoring AT cern.ch
+
+All files required for installation are bundled for delivery as a tar-gzip file
+(brazos.tgz) under the "Downloads" link on this page.
+
+The main source repository will be maintained at GitHub: https://github.com/joelwwalker/Brazos
 
 A presentation on the monitoring software is viewable here:
   http://www.joelwalker.net/talks/LHC_Monitoring.pdf
