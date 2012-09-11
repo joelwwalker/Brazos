@@ -86,7 +86,7 @@ Once your data downloads have been tested and your preferred configuration of ac
 is established, it is time to register the monitor with the crontab job scheduler.
 The following line should be added verbatim to the monitor user's crontab:
 
-	* * * * * . ${HOME}/.bashrc && ${BRAZOS_BASE_PATH}${BRAZOS_CGI_PATH}/_Perl/brazos.pl > /dev/null 2> &1
+	* * * * * . ${HOME}/.bashrc && ${BRAZOS_BASE_PATH}${BRAZOS_CGI_PATH}/_Perl/brazos.pl > /dev/null 2>&1
 
 Note that although the monitor is triggered by this command once each minute, most cycles will
 pass without any action being taken.  The most rapidly refreshed statistics are handled on a five
